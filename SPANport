@@ -1,0 +1,11 @@
+# This example shows how to set up a SPAN session (session 1)
+# for monitoring a source port to a destination port
+
+no monitor session 1
+monitor session 1 source interface gigabitEthernet1/0/1
+monitor session 1 destination interface gigabitEthernet1/0/2 encapsulation replicate
+
+
+# Verify by
+
+show monitor session 1
