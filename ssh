@@ -1,0 +1,17 @@
+/
+username cisco password 0 cisco
+
+ip domain-name rtp.cisco.com
+
+
+crypto key generate rsa
+ip ssh time-out 60
+ip ssh authentication-retries 2
+
+line vty 0 4
+
+!--- Prevent non-SSH Telnets.
+
+transport input ssh
+
+login ???
