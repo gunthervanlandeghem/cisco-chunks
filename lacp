@@ -1,0 +1,8 @@
+interface Port-channel1
+ description TO-STORAGE
+
+interface GigabitEthernet1/0/1
+ channel-group 1 mode active
+
+interface GigabitEthernet1/0/2
+ channel-group 1 mode active
