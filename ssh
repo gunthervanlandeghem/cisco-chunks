@@ -3,6 +3,7 @@ username cisco password 0 cisco
 
 ip domain-name rtp.cisco.com
 
+ip ssh version 2
 
 crypto key generate rsa
 ip ssh time-out 60
@@ -14,4 +15,4 @@ line vty 0 4
 
 transport input ssh
 
-login ???
+login local
